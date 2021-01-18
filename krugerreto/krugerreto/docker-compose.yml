@@ -1,0 +1,11 @@
+version: "3.1"
+services: 
+   postgres:
+    image: postgres:11-alpine
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: 123456789
+      POSTGRES_USER: postgres
+      POSTGRES_DB: kruger
+    ports:
+      - 5432:5432
